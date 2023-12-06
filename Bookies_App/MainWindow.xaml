@@ -7,6 +7,55 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="1.1*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0"  Grid.RowSpan="3" >
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5, 0.75" StartPoint="0.5, 0.05">
+                        <GradientStop Color="#3f464d"/>
+                        <GradientStop Color="#212529" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            
+            <TextBlock Grid.Row="0" Text="BOOKIES" Foreground="#FFE4C4" FontSize="30.5" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Line Grid.Row="1"
+                X1="280" Y1="10"
+                X2="520" Y2="10"
+                Stroke="Bisque"
+                StrokeThickness="0.5" />
+
+            <WrapPanel Grid.Row="2" HorizontalAlignment="Center">
+                <TextBlock Foreground="Bisque" Margin="0 0 10px  0">Home</TextBlock>
+                <TextBlock Foreground="Bisque" Margin="0 0 10px 0">Books</TextBlock>
+                <TextBlock Foreground="Bisque" Margin="0 0 10px 0">About</TextBlock>
+                <TextBlock Foreground="Bisque" Margin="0 0 10px 0">Login</TextBlock>
+                <TextBlock Foreground="Bisque" Margin="0 0 10px 0">Sign up</TextBlock>
+            </WrapPanel>
+            
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0" Background="#515057">
+            <TextBlock Text="I am Inkspired" Foreground="#212529" FontSize="30px" Margin="10" 
+                HorizontalAlignment="Center" VerticalAlignment="Top" />
+        </Grid>
+        
+        <Grid Grid.Row="2" Grid.Column="0" Background="#212529">
+            <TextBlock Text="BOOKIES" Foreground="#FFE4C4" FontSize="16px" Margin="10" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+
 
     </Grid>
 </Window>
