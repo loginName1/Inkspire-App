@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bookies_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Bookies App" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -28,7 +28,7 @@
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
-            
+
             <TextBlock Grid.Row="0" Text="BOOKIES" Foreground="#FFE4C4" FontSize="30.5" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <Line Grid.Row="1"
                 X1="280" Y1="10"
@@ -37,25 +37,22 @@
                 StrokeThickness="0.5" />
 
             <WrapPanel Grid.Row="2" HorizontalAlignment="Center">
-                <TextBlock Foreground="Bisque" Margin="0 0 10px  0">Home</TextBlock>
-                <TextBlock Foreground="Bisque" Margin="0 0 10px 0">Books</TextBlock>
-                <TextBlock Foreground="Bisque" Margin="0 0 10px 0">About</TextBlock>
-                <TextBlock Foreground="Bisque" Margin="0 0 10px 0">Login</TextBlock>
-                <TextBlock Foreground="Bisque" Margin="0 0 10px 0">Sign up</TextBlock>
+                <Button x:Name="Home" Background ="#212529" Foreground="Bisque" Margin="0 0 10px 0" BorderThickness="0,0,0,0" Click="HomeRedirectClick">Home</Button>
+                <Button x:Name="Books" Background ="#212529" Foreground="Bisque" Margin="0 0 10px 0" BorderThickness="0,0,0,0" Click="BooksRedirectClick">Books</Button>
+                <Button x:Name="About" Background ="#212529" Foreground="Bisque" Margin="0 0 10px 0" BorderThickness="0,0,0,0" Click="AboutRedirectClick">About</Button>
+                <Button x:Name="Login" Background ="#212529" Foreground="Bisque" Margin="0 0 10px 0" BorderThickness="0,0,0,0" Click="LoginRedirectClick">Login</Button>
+                <Button x:Name="Register" Background ="#212529" Foreground="Bisque" Margin="0 0 10px 0" BorderThickness="0,0,0,0" Click="RegisterRedirectClick">Sign up</Button>
             </WrapPanel>
-            
-        </Grid>
 
-        <Grid Grid.Row="1" Grid.Column="0" Background="#515057">
-            <TextBlock Text="I am Inkspired" Foreground="#212529" FontSize="30px" Margin="10" 
-                HorizontalAlignment="Center" VerticalAlignment="Top" />
+
         </Grid>
-        
+        <Grid Grid.Row="1" Grid.Column="0" Background="#515057">
+            
+            <Frame x:Name="Main" Margin="0,0,0,0" NavigationUIVisibility="Hidden"/>
+        </Grid>
         <Grid Grid.Row="2" Grid.Column="0" Background="#212529">
             <TextBlock Text="BOOKIES" Foreground="#FFE4C4" FontSize="16px" Margin="10" 
-                HorizontalAlignment="Center" VerticalAlignment="Center" />
+HorizontalAlignment="Center" VerticalAlignment="Center" />
         </Grid>
-
-
     </Grid>
 </Window>

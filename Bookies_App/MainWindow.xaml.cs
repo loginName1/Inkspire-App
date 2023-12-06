@@ -16,9 +16,65 @@ namespace Bookies_App
     /// </summary>
     public partial class MainWindow : Window
     {
+        HomePage homePage = null;
+        BooksPage booksPage = null;
+        AboutPage aboutPage = null;
+        LoginPage loginPage = null;
+        RegisterPage registerPage = null;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void HomeRedirectClick(object sender, RoutedEventArgs e)
+        {
+            if (homePage == null) {
+                homePage = new HomePage();
+            }
+
+            Main.Content = homePage;
+        }
+        private void AboutRedirectClick(object sender, RoutedEventArgs e)
+        {
+            if (aboutPage == null)
+            {
+                aboutPage = new AboutPage();
+            }
+
+            Main.Content = aboutPage;
+        }
+        private void BooksRedirectClick(object sender, RoutedEventArgs e)
+        {
+            if (booksPage == null)
+            {
+                booksPage = new BooksPage();
+            }
+
+            Main.Content = booksPage;
+        }
+        private void LoginRedirectClick(object sender, RoutedEventArgs e)
+        {
+            if (loginPage == null)
+            {
+                loginPage = new LoginPage();
+            }
+
+            Main.Content = loginPage;
+        }
+        private void RegisterRedirectClick(object sender, RoutedEventArgs e)
+        {
+            if (registerPage == null)
+            {
+                registerPage = new RegisterPage();
+            }
+
+            Main.Content = registerPage;
+        }
+
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
