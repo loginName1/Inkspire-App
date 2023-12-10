@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Faks\\UM-Mag 23-25\\RUPS\\aplikacija\\Bookies_App\\Bookies_App.csproj": {}
+    "C:\\FERI_mag1_s1\\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\\n2\\Bookies_App\\Bookies_App.csproj": {}
   },
   "projects": {
-    "D:\\Faks\\UM-Mag 23-25\\RUPS\\aplikacija\\Bookies_App\\Bookies_App.csproj": {
+    "C:\\FERI_mag1_s1\\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\\n2\\Bookies_App\\Bookies_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Faks\\UM-Mag 23-25\\RUPS\\aplikacija\\Bookies_App\\Bookies_App.csproj",
+        "projectUniqueName": "C:\\FERI_mag1_s1\\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\\n2\\Bookies_App\\Bookies_App.csproj",
         "projectName": "Bookies_App",
-        "projectPath": "D:\\Faks\\UM-Mag 23-25\\RUPS\\aplikacija\\Bookies_App\\Bookies_App.csproj",
-        "packagesPath": "C:\\Users\\yanbe\\.nuget\\packages\\",
-        "outputPath": "D:\\Faks\\UM-Mag 23-25\\RUPS\\aplikacija\\Bookies_App\\obj\\",
+        "projectPath": "C:\\FERI_mag1_s1\\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\\n2\\Bookies_App\\Bookies_App.csproj",
+        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
+        "outputPath": "C:\\FERI_mag1_s1\\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\\n2\\Bookies_App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\yanbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
