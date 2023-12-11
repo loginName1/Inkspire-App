@@ -9,10 +9,28 @@
       Title="BooksPage">
 
     <Grid Style="{StaticResource pageBackgroundStyle}">
-        <TextBlock Text="Books page" Foreground="#212529" FontSize="30px" Margin="10" 
-HorizontalAlignment="Center" VerticalAlignment="Top" />
-        <WrapPanel>
-            
-        </WrapPanel>
+        <StackPanel>
+            <TextBlock Text="Books page" Style="{StaticResource pageH3Style}"/>
+
+            <WrapPanel HorizontalAlignment="Center" >
+                <ListView x:Name="BookList" Background="{x:Null}">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Width="800px"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border Style="{StaticResource BorderCardStyle}">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Title}" Style="{StaticResource pageH5Style}"/>
+                                    <TextBlock Text="{Binding Author}" Style="{StaticResource pageH6Style}"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListView>
+            </WrapPanel>
+        </StackPanel>
     </Grid>
 </Page>

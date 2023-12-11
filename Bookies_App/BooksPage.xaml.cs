@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,24 @@ namespace Bookies_App
         public BooksPage()
         {
             InitializeComponent();
+            List<Book> test = new List<Book>();
+            test.Add(new Book() { Title="Adamova knjiga", Author="Author: Adam"});
+            test.Add(new Book() { Title="Book of Lorem", Author = "Author: Adam" });
+            test.Add(new Book() { Title="knjiga", Author = "Author: Tim" });
+            test.Add(new Book() { Title="In a galaxy far away", Author = "Adam"});
+            test.Add(new Book() { Title="Book of Lorem", Author = "Author: Adam" });
+            test.Add(new Book() { Title="knjiga", Author = "Author: Tim" });
+            test.Add(new Book() { Title="In a galaxy far away", Author = "Author: Marija" });
+
+            BookList.ItemsSource = test;
         }
+
+
+    }
+
+    public class Book
+    {
+        public string Title { get; set; }
+        public string Author { get; set; }
     }
 }

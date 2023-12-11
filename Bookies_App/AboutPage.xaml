@@ -14,40 +14,27 @@
                 <TextBlock Text="About page" Style="{StaticResource pageH3Style}" />
             </Grid>
 
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-
-                <StackPanel Grid.Column="0" Style="{StaticResource StackPanelStyle}">
+            <WrapPanel Style="{StaticResource WrapPanelStyle}">
+                <StackPanel Style="{StaticResource StackPanelStyle}">
                     <Image Style="{StaticResource imageStyle}" Source="uporabnik.png"/>
                     <TextBlock Style="{StaticResource pageH5Style}"><Run Text="Tim Vehovar"/></TextBlock>
                     <TextBlock Style="{StaticResource pageH6Style}"><Run Text="Forntend"/></TextBlock>
                 </StackPanel>
-                <StackPanel Grid.Column="1" Style="{StaticResource StackPanelStyle}">
+                <StackPanel Style="{StaticResource StackPanelStyle}">
                     <Image Style="{StaticResource imageStyle}" Source="uporabnik.png"/>
                     <TextBlock Style="{StaticResource pageH5Style}"> Adam Baša</TextBlock>
                     <TextBlock Style="{StaticResource pageH6Style}"> Backend</TextBlock>
                 </StackPanel>
-                <StackPanel Grid.Column="2" Style="{StaticResource StackPanelStyle}">
+                <StackPanel Style="{StaticResource StackPanelStyle}">
                     <Image Style="{StaticResource imageStyle}" Source="uporabnik.png"/>
                     <TextBlock Style="{StaticResource pageH5Style}"> Jan Benko</TextBlock>
                     <TextBlock Style="{StaticResource pageH6Style}"> Baza</TextBlock>
                 </StackPanel>
-            </Grid>
+            </WrapPanel>
 
 
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-
-                <Border Grid.Column="0" Style="{StaticResource BorderCardStyle}">
+            <WrapPanel Style="{StaticResource WrapPanelStyle}">
+                <Border Style="{StaticResource BorderCardStyle}">
                     <StackPanel>
                         <TextBlock Style="{StaticResource pageH5Style}">
                             Business
@@ -58,7 +45,7 @@
                     </StackPanel>
                 </Border>
 
-                <Border Grid.Column="1" Style="{StaticResource BorderCardStyle}">
+                <Border Style="{StaticResource BorderCardStyle}">
                     <StackPanel>
                         <TextBlock Style="{StaticResource pageH5Style}">
                             Books
@@ -68,7 +55,7 @@
                         </TextBlock>
                     </StackPanel>
                 </Border>
-                <Border Grid.Column="2" Style="{StaticResource BorderCardStyle}">
+                <Border Style="{StaticResource BorderCardStyle}">
                     <StackPanel>
                         <TextBlock Style="{StaticResource pageH5Style}">
                             Ideja
@@ -78,7 +65,7 @@
                         </TextBlock>
                     </StackPanel>
                 </Border>
-                <Border Grid.Column="3" Style="{StaticResource BorderCardStyle}">
+                <Border Style="{StaticResource BorderCardStyle}">
                     <StackPanel>
                         <TextBlock Style="{StaticResource pageH5Style}">
                             Inkspiration
@@ -90,7 +77,7 @@
                     </StackPanel>
                 </Border>
 
-            </Grid>
+            </WrapPanel>
         </StackPanel>
     </Grid>
 </Page>

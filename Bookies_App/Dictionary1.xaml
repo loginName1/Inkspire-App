@@ -2,14 +2,20 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     
+    <!-- COLOR -->
     <SolidColorBrush x:Key="LightGray" Color="#515057"/>
     <SolidColorBrush x:Key="DarkGray" Color="#212529"/>
     <SolidColorBrush x:Key="Dark" Color="#18191a"/>
-    <SolidColorBrush x:Key="Bisque" Color="Bisque"/>
+    <SolidColorBrush x:Key="Bisque" Color="#ffe4c4"/>
     <SolidColorBrush x:Key="Light" Color="White"/>
-    
-    
 
+    <LinearGradientBrush x:Key="HeaderColor" EndPoint="0.5, 0.75" StartPoint="0.5, 0.05">
+        <GradientStop Color="#3f464d"/>
+        <GradientStop Color="#212529" Offset="1"/>
+    </LinearGradientBrush>
+
+
+    <!-- HEADER -->
     <Style TargetType="{x:Type TextBlock}" x:Key="menuHeaderStyle">
         <Setter Property="FontSize" Value="30" />
         <Setter Property="FontFamily" Value="Calibri" />
@@ -17,11 +23,31 @@
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Foreground" Value="{StaticResource Bisque}"/>
     </Style>
+    
+    <Style TargetType="{x:Type Button}" x:Key="menuHeaderButtonStyle">
+        <Setter Property="Foreground" Value="{StaticResource Bisque}"/>
+        <Setter Property="Margin" Value="0 0 10 0"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Background" Value="{x:Null}"/>
+        <Setter Property="Cursor" Value="Hand"/>
 
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="{StaticResource Dark}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type Border}" x:Key="HeaderBackgroundStyle">
+        <Setter Property="Background" Value="{StaticResource HeaderColor}"/>
+    </Style>
+
+    <!-- PAGE -->
     <Style TargetType="{x:Type Grid}" x:Key="pageBackgroundStyle">
         <Setter Property="Background" Value="{StaticResource LightGray}"/>
     </Style>
 
+    <!-- FOOTER -->
     <Style TargetType="{x:Type Grid}" x:Key="pageFooterStyle">
         <Setter Property="Background" Value="{StaticResource DarkGray}"/>
     </Style>
@@ -34,13 +60,7 @@
         <Setter Property="FontFamily" Value="Calibri" />
     </Style>
 
-    <Style TargetType="{x:Type Button}" x:Key="menuHeaderButtonStyle">
-        <Setter Property="Foreground" Value="{StaticResource Bisque}"/>
-        <Setter Property="Margin" Value="0 0 10 0"/>
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="Background" Value="{StaticResource DarkGray}"/>
-    </Style>
-
+    <!-- TEXT BLOCK -->
     <Style TargetType="{x:Type TextBlock}" x:Key="pageH3Style">
         <Setter Property="FontSize" Value="30"/>
         <Setter Property="Margin" Value="10"/>
@@ -59,6 +79,7 @@
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Top"/>
         <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="TextWrapping" Value="Wrap"/>
     </Style>
 
     <Style TargetType="{x:Type TextBlock}" x:Key="pageH6Style">
@@ -73,22 +94,49 @@
 
     </Style>
 
+    <!-- TEXT BOX -->
+    <Style TargetType="{x:Type TextBox}" x:Key="TextBoxStyle">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Padding" Value="2"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="FontFamily" Value="Calibri" />
+        
+    </Style>
+
+    <!-- IMAGE -->
     <Style TargetType="{x:Type Image}" x:Key="imageStyle">
         <Setter Property="Width" Value="125"/>
     </Style>
 
+    <!-- CARD -->
     <Style TargetType="{x:Type Border}" x:Key="BorderCardStyle">
         <Setter Property="Background" Value="{StaticResource Light}"/>
         <Setter Property="CornerRadius" Value="10"/>
         <Setter Property="Margin" Value="25 30 25 0"/>
+        <Setter Property="Width" Value="140"/>
     </Style>
 
+
+    <!-- PANEL -->
     <Style TargetType="{x:Type WrapPanel}" x:Key="WrapPanelStyle">
         <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="5"/>
     </Style>
 
     <Style TargetType="{x:Type StackPanel}" x:Key="StackPanelStyle">
         <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="20 0 20 0"/>
+    </Style>
+
+    <Style TargetType="{x:Type Button}" x:Key="LoginButtonStyle_1">
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Padding" Value="8 4 8 4"/>
+    </Style>
+
+    <Style TargetType="{x:Type Button}" x:Key="LoginButtonStyle_2">
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Padding" Value="8 4 8 4"/>
+        <Setter Property="Background" Value="{x:Null}"/>
     </Style>
 
 </ResourceDictionary>
