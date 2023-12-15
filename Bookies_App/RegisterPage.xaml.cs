@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Bookies_App.Utilities;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +26,32 @@ namespace Bookies_App
         public RegisterPage()
         {
             InitializeComponent();
+            User newUser = new User();
+            ///somehow get the registration information and click button for function call
+            
+            //// TESTING INFORMATION
+            /*newUser.username = "app_tester";
+            newUser.name = "app";
+            newUser.email = "testing@app.com";
+            newUser.password = "test12";*/
+            
+            //// UNCOMMENT WHEN REGISTRATION IS IS DONE
+            /*Task<HttpResponseMessage> insert = WebAPI.PostCall(API_URIs.users + API_URIs.signup, newUser);
+
+            //// MORE TESTING LINES
+            //Debug.WriteLine(insert.Result.Content.ReadAsStringAsync().Result);
+            if (insert.Result.StatusCode != System.Net.HttpStatusCode.Created)
+            {
+                // give user heads up that something failed
+            }*/
         }
+    }
+
+    public class User
+    {
+        public string name { get; set; }
+        public string username { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
     }
 }
