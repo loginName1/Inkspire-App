@@ -30,6 +30,9 @@
     <Page Update="BooksPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Dictionary1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>

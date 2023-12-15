@@ -8,8 +8,15 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="LoginPage">
 
-    <Grid Background="#515057">
-        <TextBlock Text="login page" Foreground="#212529" FontSize="30px" Margin="10" 
-HorizontalAlignment="Center" VerticalAlignment="Top" />
+    <Grid Style="{StaticResource pageBackgroundStyle}">
+        <StackPanel Style="{StaticResource StackPanelStyle}">
+            <TextBlock Text="login page" Style="{StaticResource pageH3Style}" />
+            <TextBox Style="{StaticResource TextBoxStyle}">Uporabniško ime</TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">Geslo</TextBox>
+            <WrapPanel Style="{StaticResource WrapPanelStyle}">
+                <Button Style="{StaticResource LoginButtonStyle_1}">LOGIN</Button>
+                <Button Style="{StaticResource LoginButtonStyle_2}">SIGN UP</Button>
+            </WrapPanel>
+        </StackPanel>
     </Grid>
 </Page>

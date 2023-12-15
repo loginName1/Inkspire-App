@@ -50,3 +50,17 @@ D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\AboutP
 D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\BooksPage.baml
 D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\LoginPage.baml
 D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\RegisterPage.baml
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\Dictionary1.baml
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\AboutPage.g.cs
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\BooksPage.g.cs
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\HomePage.g.cs
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\LoginPage.g.cs
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\RegisterPage.g.cs
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\App.baml
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\AboutPage.baml
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\BooksPage.baml
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\HomePage.baml
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\LoginPage.baml
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\RegisterPage.baml
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\bin\Debug\net8.0-windows\uporabnik.png
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\Bookies_App_Content.g.cs

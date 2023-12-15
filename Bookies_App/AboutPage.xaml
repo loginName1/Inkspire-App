@@ -8,8 +8,76 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AboutPage">
 
-    <Grid Background="#515057">
-        <TextBlock Text="About page" Foreground="#212529" FontSize="30px" Margin="10" 
-HorizontalAlignment="Center" VerticalAlignment="Top" />
+    <Grid Style="{StaticResource pageBackgroundStyle}">
+        <StackPanel>
+            <Grid>
+                <TextBlock Text="About page" Style="{StaticResource pageH3Style}" />
+            </Grid>
+
+            <WrapPanel Style="{StaticResource WrapPanelStyle}">
+                <StackPanel Style="{StaticResource StackPanelStyle}">
+                    <Image Style="{StaticResource imageStyle}" Source="uporabnik.png"/>
+                    <TextBlock Style="{StaticResource pageH5Style}"><Run Text="Tim Vehovar"/></TextBlock>
+                    <TextBlock Style="{StaticResource pageH6Style}"><Run Text="Forntend"/></TextBlock>
+                </StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle}">
+                    <Image Style="{StaticResource imageStyle}" Source="uporabnik.png"/>
+                    <TextBlock Style="{StaticResource pageH5Style}"> Adam Baša</TextBlock>
+                    <TextBlock Style="{StaticResource pageH6Style}"> Backend</TextBlock>
+                </StackPanel>
+                <StackPanel Style="{StaticResource StackPanelStyle}">
+                    <Image Style="{StaticResource imageStyle}" Source="uporabnik.png"/>
+                    <TextBlock Style="{StaticResource pageH5Style}"> Jan Benko</TextBlock>
+                    <TextBlock Style="{StaticResource pageH6Style}"> Baza</TextBlock>
+                </StackPanel>
+            </WrapPanel>
+
+
+            <WrapPanel Style="{StaticResource WrapPanelStyle}">
+                <Border Style="{StaticResource BorderCardStyle}">
+                    <StackPanel>
+                        <TextBlock Style="{StaticResource pageH5Style}">
+                            Business
+                        </TextBlock>
+                        <TextBlock Style="{StaticResource pageH6Style}">
+                            Preberite si več o naših ciljih.
+                        </TextBlock>
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource BorderCardStyle}">
+                    <StackPanel>
+                        <TextBlock Style="{StaticResource pageH5Style}">
+                            Books
+                        </TextBlock>
+                        <TextBlock Style="{StaticResource pageH6Style}">
+                            Prelistajte skozi seznam naših knjig.
+                        </TextBlock>
+                    </StackPanel>
+                </Border>
+                <Border Style="{StaticResource BorderCardStyle}">
+                    <StackPanel>
+                        <TextBlock Style="{StaticResource pageH5Style}">
+                            Ideja
+                        </TextBlock>
+                        <TextBlock Style="{StaticResource pageH6Style}">
+                            Več o naši ideji o Bookies.
+                        </TextBlock>
+                    </StackPanel>
+                </Border>
+                <Border Style="{StaticResource BorderCardStyle}">
+                    <StackPanel>
+                        <TextBlock Style="{StaticResource pageH5Style}">
+                            Inkspiration
+                        </TextBlock>
+
+                        <TextBlock Style="{StaticResource pageH6Style}">
+                            Preberite si več o Inkspiraciji in o ljudeh, ki delajo zanj.
+                        </TextBlock>
+                    </StackPanel>
+                </Border>
+
+            </WrapPanel>
+        </StackPanel>
     </Grid>
 </Page>

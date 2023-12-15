@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bookies_App"
         mc:Ignorable="d"
-        Title="Bookies App" Height="450" Width="800">
+        Title="Bookies App" Height="650" Width="900"
+        MinHeight="650" MinWidth="900">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -20,39 +21,33 @@
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
 
-            <Border Grid.Row="0"  Grid.RowSpan="3" >
-                <Border.Background>
-                    <LinearGradientBrush EndPoint="0.5, 0.75" StartPoint="0.5, 0.05">
-                        <GradientStop Color="#3f464d"/>
-                        <GradientStop Color="#212529" Offset="1"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-            </Border>
+            <Border Grid.Row="0"  Grid.RowSpan="3" Style="{StaticResource HeaderBackgroundStyle}"></Border>
 
-            <TextBlock Grid.Row="0" Text="BOOKIES" Foreground="#FFE4C4" FontSize="30.5" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Grid.Row="0" Text="BOOKIES" Style="{StaticResource ResourceKey=menuHeaderStyle}"/>
             <Line Grid.Row="1"
-                X1="280" Y1="10"
-                X2="520" Y2="10"
+                X1="0" Y1="0"
+                X2="300" Y2="0"
                 Stroke="Bisque"
-                StrokeThickness="0.5" />
+                StrokeThickness="0.5" 
+                HorizontalAlignment="Center"  
+                  />
 
             <WrapPanel Grid.Row="2" HorizontalAlignment="Center">
-                <Button x:Name="Home" Background ="#212529" Foreground="Bisque" Margin="0 0 10px 0" BorderThickness="0,0,0,0" Click="HomeRedirectClick">Home</Button>
-                <Button x:Name="Books" Background ="#212529" Foreground="Bisque" Margin="0 0 10px 0" BorderThickness="0,0,0,0" Click="BooksRedirectClick">Books</Button>
-                <Button x:Name="About" Background ="#212529" Foreground="Bisque" Margin="0 0 10px 0" BorderThickness="0,0,0,0" Click="AboutRedirectClick">About</Button>
-                <Button x:Name="Login" Background ="#212529" Foreground="Bisque" Margin="0 0 10px 0" BorderThickness="0,0,0,0" Click="LoginRedirectClick">Login</Button>
-                <Button x:Name="Register" Background ="#212529" Foreground="Bisque" Margin="0 0 10px 0" BorderThickness="0,0,0,0" Click="RegisterRedirectClick">Sign up</Button>
+                <Button x:Name="Home" Style="{StaticResource menuHeaderButtonStyle}"  Click="HomeRedirectClick">Home</Button>
+                <Button x:Name="Books" Style="{StaticResource menuHeaderButtonStyle}" Click="BooksRedirectClick">Books</Button>
+                <Button x:Name="About" Style="{StaticResource menuHeaderButtonStyle}" Click="AboutRedirectClick">About</Button>
+                <Button x:Name="Login" Style="{StaticResource menuHeaderButtonStyle}" Click="LoginRedirectClick">Login</Button>
+                <Button x:Name="Register" Style="{StaticResource menuHeaderButtonStyle}" Click="RegisterRedirectClick">Sign up</Button>
             </WrapPanel>
 
 
         </Grid>
-        <Grid Grid.Row="1" Grid.Column="0" Background="#515057">
+        <Grid Grid.Row="1" Grid.Column="0" Style="{StaticResource pageBackgroundStyle}">
             
             <Frame x:Name="Main" Margin="0,0,0,0" NavigationUIVisibility="Hidden"/>
         </Grid>
-        <Grid Grid.Row="2" Grid.Column="0" Background="#212529">
-            <TextBlock Text="BOOKIES" Foreground="#FFE4C4" FontSize="16px" Margin="10" 
-HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Grid Grid.Row="2" Grid.Column="0" Style="{StaticResource pageFooterStyle}">
+            <TextBlock Text="BOOKIES" Style="{StaticResource pageFooterFontStyle}"/>
         </Grid>
     </Grid>
 </Window>

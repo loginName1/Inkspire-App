@@ -8,8 +8,17 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="RegisterPage">
 
-    <Grid Background="#515057">
-        <TextBlock Text="register page" Foreground="#212529" FontSize="30px" Margin="10" 
-HorizontalAlignment="Center" VerticalAlignment="Top" />
+    <Grid Style="{StaticResource pageBackgroundStyle}">
+        <StackPanel Style="{StaticResource StackPanelStyle}">
+            <TextBlock Text="register page" Style="{StaticResource pageH3Style}" />
+            <TextBox Style="{StaticResource TextBoxStyle}">Name</TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">Username</TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">Email</TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">Password</TextBox>
+            <WrapPanel Style="{StaticResource WrapPanelStyle}">
+                <Button Style="{StaticResource LoginButtonStyle_1}">REGISTER</Button>
+                <Button Style="{StaticResource LoginButtonStyle_2}">LOGIN</Button>
+            </WrapPanel>
+        </StackPanel>
     </Grid>
 </Page>
