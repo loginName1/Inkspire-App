@@ -39,7 +39,7 @@ namespace Bookies_App
             /*Task<HttpResponseMessage> insert = WebAPI.PostCall(API_URIs.users + API_URIs.signup, newUser);
 
             //// MORE TESTING LINES
-            Debug.WriteLine(insert.Result.Content.ReadAsStringAsync().Result);
+            //Debug.WriteLine(insert.Result.Content.ReadAsStringAsync().Result);
             if (insert.Result.StatusCode != System.Net.HttpStatusCode.Created)
             {
                 // give user heads up that something failed

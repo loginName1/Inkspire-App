@@ -12,5 +12,6 @@ namespace Bookies_App.Utilities
         public const string books = "books";
         public const string users = "users";
         public const string signup = "/signup";
+        public const string login = "/login";
     }
 }
