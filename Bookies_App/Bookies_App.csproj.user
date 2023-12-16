@@ -10,6 +10,12 @@
     <Compile Update="AboutPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AccountPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BookInfoPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="BooksPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,9 +28,18 @@
     <Compile Update="RegisterPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WorkshopPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AboutPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AccountPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BookInfoPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="BooksPage.xaml">
@@ -43,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="RegisterPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkshopPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

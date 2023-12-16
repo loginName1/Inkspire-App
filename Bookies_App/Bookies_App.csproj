@@ -9,7 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Page1.xaml.cs" />
+    <Compile Remove="Utilities\Class1.cs" />
+    <Compile Remove="Utilities\Class2.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="uporabnik.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Page1.xaml" />
   </ItemGroup>
 
   <ItemGroup>

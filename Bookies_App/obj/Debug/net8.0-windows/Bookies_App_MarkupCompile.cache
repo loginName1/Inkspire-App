@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\App.xaml
-7373080981
+101889811847
 1-170518284
-12-1674329376
+17-98012404
 198-688555687
-AboutPage.xaml;BooksPage.xaml;Dictionary1.xaml;HomePage.xaml;LoginPage.xaml;MainWindow.xaml;RegisterPage.xaml;
+AboutPage.xaml;AccountPage.xaml;BookInfoPage.xaml;BooksPage.xaml;Dictionary1.xaml;HomePage.xaml;LoginPage.xaml;MainWindow.xaml;RegisterPage.xaml;WorkshopPage.xaml;
 
 False
 

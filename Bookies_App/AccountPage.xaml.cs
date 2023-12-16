@@ -1,0 +1,40 @@
+﻿using Bookies_App.Utilities;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace Bookies_App
+{
+    /// <summary>
+    /// Interaction logic for AccountPage.xaml
+    /// </summary>
+    public partial class AccountPage : Page
+    {
+        public AccountPage()
+        {
+            InitializeComponent();
+
+            // get user id from some storage
+
+            //// SET USER ID WHEN ACCOUNT PAGE IS COMPLETE
+            string userId = "657c86e89cd64c8f07daf73f";
+            string userUrl = "/" + userId;
+
+            Task<HttpResponseMessage> accountInfo = WebAPI.GetCall(API_URIs.users + userUrl);
+            Debug.WriteLine(accountInfo.Result.Content.ReadAsStringAsync().Result);
+        }
+    }
+}

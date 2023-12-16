@@ -32,7 +32,7 @@ namespace Bookies_App
             //// KOMENTARJI ZA RAZLAGO PRIMERA UPORABE API KLICEV
             
             InitializeComponent();
-            //// API KLIC SE NAREDI Z UPORABO "WebAPI" FUNKCIJAMI
+            //// API KLIC SE NAREDI Z UPORABO "WebAPI" FUNKCIJ
             //// V OKLEPAJ SE DA SAMO ZADNJI DEL API KLICA (PRIMER JE V MAPI "Utilities" OD KOD SO VZETI "API_URIs")
             //// KLICI VRNEJO OBJEKT TIPA "Task" (KER C# TAKO UREJA VSE KLICE) V TEM PRIMERU JE IZBRANA BILA SPREMENLJIVKA TIPA "var" AMPAK,
             //// BI LAHKO UPORABILI TUDI "Task<HttpResponseMessage>"
@@ -56,22 +56,5 @@ namespace Bookies_App
 
     }
 
-    public class Book
-    {
-        public string id { get; set; }
-        public string name { get; set; }
-        public string author { get; set; }
-        public string genre { get; set; }
-        public string status { get; set; }
-        public string image { get; set; }
-        public string content { get; set; }
-        public List<string> comments { get; set; }
-    }
-
-    public class BookList
-    {
-        public List<Book> books { get; set; }
-        public int count { get; set; }
-    }
 
 }
