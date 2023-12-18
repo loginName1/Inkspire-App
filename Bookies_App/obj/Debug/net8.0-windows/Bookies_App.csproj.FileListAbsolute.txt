@@ -64,3 +64,13 @@ C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\De
 C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\RegisterPage.baml
 C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\bin\Debug\net8.0-windows\uporabnik.png
 C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\Bookies_App_Content.g.cs
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\bin\Debug\net8.0-windows\uporabnik.png
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\Dictionary1.baml
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\Bookies_App_Content.g.cs
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\App.baml
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\WorkshopPage.g.cs
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\WorkshopPage.baml
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\AccountPage.g.cs
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\AccountPage.baml
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\BookInfoPage.g.cs
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\BookInfoPage.baml

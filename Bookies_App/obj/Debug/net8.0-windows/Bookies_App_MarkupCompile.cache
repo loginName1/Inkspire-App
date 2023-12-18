@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\obj\Debug\net8.0-windows\
 Bookies_App
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\App.xaml
-7373080981
+D:\Faks\UM-Mag 23-25\RUPS\aplikacija\Bookies_App\App.xaml
+101889811847
 1-170518284
-9-1211342671
+17-98012404
 198-688555687
-AboutPage.xaml;BooksPage.xaml;Dictionary1.xaml;HomePage.xaml;LoginPage.xaml;MainWindow.xaml;RegisterPage.xaml;
+AboutPage.xaml;AccountPage.xaml;BookInfoPage.xaml;BooksPage.xaml;Dictionary1.xaml;HomePage.xaml;LoginPage.xaml;MainWindow.xaml;RegisterPage.xaml;WorkshopPage.xaml;
 
 False
 

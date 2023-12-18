@@ -23,8 +23,8 @@
                         <DataTemplate>
                             <Border Style="{StaticResource BorderCardStyle}">
                                 <StackPanel>
-                                    <TextBlock Text="{Binding Title}" Style="{StaticResource pageH5Style}"/>
-                                    <TextBlock Text="{Binding Author}" Style="{StaticResource pageH6Style}"/>
+                                    <TextBlock Text="{Binding name}" Style="{StaticResource pageH5Style}"/>
+                                    <TextBlock Text="{Binding author}" Style="{StaticResource pageH6Style}"/>
                                 </StackPanel>
                             </Border>
                         </DataTemplate>

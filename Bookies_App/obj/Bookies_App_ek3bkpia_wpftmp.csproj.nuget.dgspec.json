@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Faks\\UM-Mag 23-25\\RUPS\\aplikacija\\Bookies_App\\Bookies_App.csproj": {}
+  },
+  "projects": {
+    "D:\\Faks\\UM-Mag 23-25\\RUPS\\aplikacija\\Bookies_App\\Bookies_App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Faks\\UM-Mag 23-25\\RUPS\\aplikacija\\Bookies_App\\Bookies_App.csproj",
+        "projectName": "Bookies_App",
+        "projectPath": "D:\\Faks\\UM-Mag 23-25\\RUPS\\aplikacija\\Bookies_App\\Bookies_App.csproj",
+        "packagesPath": "C:\\Users\\yanbe\\.nuget\\packages\\",
+        "outputPath": "D:\\Faks\\UM-Mag 23-25\\RUPS\\aplikacija\\Bookies_App\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yanbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
