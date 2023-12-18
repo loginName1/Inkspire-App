@@ -27,6 +27,12 @@ namespace Bookies_App
         public MainWindow()
         {
             InitializeComponent();
+            if (homePage == null)
+            {
+                homePage = new HomePage();
+            }
+
+            Main.Content = homePage;
         }
 
         private void HomeRedirectClick(object sender, RoutedEventArgs e)
