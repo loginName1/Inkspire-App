@@ -8,7 +8,62 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="BookInfoPage">
 
-    <Grid>
-        
+    <Grid Style="{StaticResource pageBackgroundStyle}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Image Style="{StaticResource imageStyle2}" Source="uporabnik.png"/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0">
+                    <TextBlock Style="{StaticResource pageH1Style}"> Author </TextBlock>
+                    <TextBlock Style="{StaticResource pageH2Style}"> author </TextBlock>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <TextBlock Style="{StaticResource pageH1Style}"> Genre </TextBlock>
+                    <TextBlock Style="{StaticResource pageH2Style}"> genre </TextBlock>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2">
+                    <TextBlock Style="{StaticResource pageH1Style}"> Status </TextBlock>
+                    <TextBlock Style="{StaticResource pageH2Style}"> status</TextBlock>
+                </StackPanel>
+
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <StackPanel Grid.Column="0">
+                    <TextBlock Style="{StaticResource pageH1Style}">Description</TextBlock>
+                    <TextBlock Style="{StaticResource pageH4Style}">The Description</TextBlock>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <StackPanel Grid.Column="0">
+                    <TextBlock Style="{StaticResource pageH1Style}">Content</TextBlock>
+                    <ScrollViewer Height="120px" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <TextBlock TextWrapping="Wrap" Text="Lorus. Phasellus consectetur neque ctetur neque a sodala sodales ultrices. Vivamus vulputate ex nec libero condimentum finibus. Praesent sed egestas quam. Aenean idLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel lorem id purus fringilla semper eget a purus. Phasellus consectetur neque a sodales ultrices. Vivamus vulputate ex nec libero condimentum finibus. Praesent sed egestas quam. Aenean id eros neque. Mauris efficitur nisl etLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel lorem id purus fringilla semper eget a purus. Phasellus consectetur neque a sodales ultrices. Vivamus vulputate ex nec libero condimentum finibus. Praesent sed egestas quam. Aenean id eros neque. Mauris efficitur nisl et eros neque. Mauris efficitur nisl et"/>
+                    </ScrollViewer>
+                </StackPanel>
+            </Grid>
+
+        </Grid>
     </Grid>
 </Page>

@@ -4,10 +4,12 @@
     
     <!-- COLOR -->
     <SolidColorBrush x:Key="LightGray" Color="#515057"/>
+    <SolidColorBrush x:Key="LightGray2" Color="#9d9ba3"/>
     <SolidColorBrush x:Key="DarkGray" Color="#212529"/>
     <SolidColorBrush x:Key="Dark" Color="#18191a"/>
     <SolidColorBrush x:Key="Bisque" Color="#ffe4c4"/>
     <SolidColorBrush x:Key="Light" Color="White"/>
+    <SolidColorBrush x:Key="Light2" Color="#d4d1de"/>
 
     <LinearGradientBrush x:Key="HeaderColor" EndPoint="0.5, 0.75" StartPoint="0.5, 0.05">
         <GradientStop Color="#3f464d"/>
@@ -61,6 +63,18 @@
     </Style>
 
     <!-- TEXT BLOCK -->
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="pageH1Style">
+        <Setter Property="FontSize" Value="24"/>
+        <Setter Property="Margin" Value="4 0 0 0"/>
+        <Setter Property="Foreground" Value="{StaticResource Dark}"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Padding" Value="0 20 0 0"/>
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+    
     <Style TargetType="{x:Type TextBlock}" x:Key="pageH3Style">
         <Setter Property="FontSize" Value="30"/>
         <Setter Property="Margin" Value="10"/>
@@ -94,18 +108,62 @@
 
     </Style>
 
+    <Style TargetType="{x:Type TextBlock}" x:Key="pageH2Style">
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Margin" Value="10 1 0 1"/>
+        <Setter Property="Foreground" Value="{StaticResource Dark}"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="pageH4Style">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Margin" Value="16 1 8 1"/>
+        <Setter Property="Foreground" Value="{StaticResource Dark}"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="Height" Value="110"/>
+
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Visible"/>
+    </Style>
+
     <!-- TEXT BOX -->
     <Style TargetType="{x:Type TextBox}" x:Key="TextBoxStyle">
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Padding" Value="2"/>
         <Setter Property="Margin" Value="10"/>
         <Setter Property="FontFamily" Value="Calibri" />
-        
     </Style>
+
+    <Style TargetType="{x:Type TextBox}" x:Key="TextBoxStyle2">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Padding" Value="2"/>
+        <Setter Property="Margin" Value="15 3 15 3"/>
+        <Setter Property="FontFamily" Value="Calibri" />
+
+        <Setter Property="Foreground" Value="{StaticResource LightGray}"/>
+        <Setter Property="Background" Value="{StaticResource Light2}"/>
+
+    </Style>
+
 
     <!-- IMAGE -->
     <Style TargetType="{x:Type Image}" x:Key="imageStyle">
         <Setter Property="Width" Value="125"/>
+    </Style>
+
+    <Style TargetType="{x:Type Image}" x:Key="imageStyle2">
+        <Setter Property="Width" Value="130"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="Margin" Value="5 30 0 0"/>
     </Style>
 
     <!-- CARD -->
@@ -137,6 +195,15 @@
         <Setter Property="Margin" Value="5"/>
         <Setter Property="Padding" Value="8 4 8 4"/>
         <Setter Property="Background" Value="{x:Null}"/>
+    </Style>
+    
+    <!-- BUTTON -->
+    <Style TargetType="{x:Type Button}" x:Key="ButtonStyle">
+        <Setter Property="Margin" Value="2 2 40 2"/>
+        <Setter Property="Padding" Value="6 3 6 3"/>
+        <Setter Property="Width" Value="120"/>
+        <Setter Property="Background" Value="{StaticResource LightGray2}"/>
+        <Setter Property="Foreground" Value="{StaticResource Bisque}"/>
     </Style>
 
 </ResourceDictionary>

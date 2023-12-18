@@ -12,7 +12,8 @@
 
     <Grid Style="{StaticResource pageBackgroundStyle}">
         <TextBlock Text="I am Inkspired." Style="{StaticResource pageH3Style}"/>
-        </Grid>
+
+    </Grid>
 
         
     

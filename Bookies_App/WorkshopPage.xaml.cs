@@ -41,5 +41,10 @@ namespace Bookies_App
 
             Debug.WriteLine(bookInsert.Result.Content.ReadAsStringAsync().Result);
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
