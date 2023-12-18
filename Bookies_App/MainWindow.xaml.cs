@@ -22,6 +22,7 @@ namespace Bookies_App
         LoginPage loginPage = null;
         RegisterPage registerPage = null;
 
+
         public MainWindow()
         {
             InitializeComponent();

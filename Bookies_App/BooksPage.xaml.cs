@@ -32,7 +32,7 @@ namespace Bookies_App
             test.Add(new Book() { Title="Book of Lorem", Author = "Author: Adam" });
             test.Add(new Book() { Title="knjiga", Author = "Author: Tim" });
             test.Add(new Book() { Title="In a galaxy far away", Author = "Author: Marija" });
-
+            
             BookList.ItemsSource = test;
         }
 
