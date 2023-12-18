@@ -21,6 +21,7 @@ namespace Bookies_App
         AboutPage aboutPage = null;
         LoginPage loginPage = null;
         RegisterPage registerPage = null;
+        WorkshopPage workshopPage = null;
 
 
         public MainWindow()
@@ -44,6 +45,16 @@ namespace Bookies_App
             }
 
             Main.Content = aboutPage;
+        }
+
+        private void WorkshopRedirectClick(object sender, RoutedEventArgs e)
+        {
+            if (workshopPage == null)
+            {
+                workshopPage = new WorkshopPage();
+            }
+
+            Main.Content = workshopPage;
         }
         private void BooksRedirectClick(object sender, RoutedEventArgs e)
         {
