@@ -23,23 +23,58 @@
             <TextBlock Style="{StaticResource pageH4Style}">Author: USER</TextBlock>
         </StackPanel>
         <Grid Grid.Row="1">
-            <TextBox Style="{StaticResource TextBoxStyle2}">Title</TextBox>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="8.3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{StaticResource pageH2Style}" Grid.Column="0">Title:</TextBlock>
+                <TextBox Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
+            </Grid>
         </Grid>
 
         <Grid Grid.Row="2">
-            <TextBox Style="{StaticResource TextBoxStyle2}" Text="Genre"/> 
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="8.3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{StaticResource pageH2Style}" Grid.Column="0">Text:</TextBlock>
+                <TextBox Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
+            </Grid>
         </Grid>
 
         <Grid Grid.Row="3">
-            <TextBox Style="{StaticResource TextBoxStyle2}" Text="Status"/> 
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="8.3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{StaticResource pageH2Style}" Grid.Column="0">Status:</TextBlock>
+                <TextBox Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
+            </Grid>
         </Grid>
 
         <Grid Grid.Row="4">
-            <TextBox Style="{StaticResource TextBoxStyle2}" Text="Description"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="8.3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{StaticResource pageH2Style}" Grid.Column="0">Description:</TextBlock>
+                <TextBox Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
+            </Grid>
         </Grid>
 
         <Grid Grid.Row="5">
-            <TextBox Style="{StaticResource TextBoxStyle2}" Text="Content"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="8.3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{StaticResource pageH2Style}" Grid.Column="0">Content:</TextBlock>
+                <TextBox Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
+            </Grid>
         </Grid>
 
         <Grid Grid.Row="6" HorizontalAlignment="Right">

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bookies_App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7abf0278a755ae289b671a9150933f5fa08bb64d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bookies_App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bookies_App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

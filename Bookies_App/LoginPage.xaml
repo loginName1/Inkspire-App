@@ -11,6 +11,9 @@
     <Grid Style="{StaticResource pageBackgroundStyle}">
         <StackPanel Style="{StaticResource StackPanelStyle}">
             <TextBlock Text="login page" Style="{StaticResource pageH3Style}" />
+
+            
+
             <TextBox Style="{StaticResource TextBoxStyle}">Uporabniško ime</TextBox>
             <TextBox Style="{StaticResource TextBoxStyle}">Geslo</TextBox>
             <WrapPanel Style="{StaticResource WrapPanelStyle}">
