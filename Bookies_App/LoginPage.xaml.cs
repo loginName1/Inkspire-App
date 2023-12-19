@@ -29,9 +29,10 @@ namespace Bookies_App
         {
             InitializeComponent();
 
-            /// get user login info
+            txtBox_password.Password = string.Empty;
+            txtBox_username.Text = string.Empty;
 
-            User loggedIn = new User();
+            /// get user login info
 
             //// TESTING INFORMATION
             /*loggedIn.username = "app_tester";
@@ -53,6 +54,30 @@ namespace Bookies_App
 
 
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            User loggedIn = new User();
+
+            loggedIn.username = txtBox_username.Text;
+            loggedIn.password = txtBox_password.Password;
+
+            Task<HttpResponseMessage> login = WebAPI.PostCall(API_URIs.users + API_URIs.login, loggedIn);
+            Debug.WriteLine(login.Result.Content.ReadAsStringAsync().Result);
+            if (login.Result.StatusCode != System.Net.HttpStatusCode.OK)
+            {
+                label_error.Content = "Napaka pri prijavi";
+            }
+            else
+            {
+                // else if login was successful give user their ID
+                loggedIn.id = JsonObject.Parse(login.Result.Content.ReadAsStringAsync().Result)["user"]["id"].ToString();
+
+                label_error.Content = "Uporabnik uspešno prijavljen";
+                //Debug.WriteLine(loggedIn.id);
+            }
         }
     }
 }

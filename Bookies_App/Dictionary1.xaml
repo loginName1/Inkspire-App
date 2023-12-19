@@ -154,6 +154,14 @@
 
     </Style>
 
+    <!-- PASSWORD BOX -->
+    <Style TargetType="{x:Type PasswordBox}" x:Key="PasswordBoxStyle">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Padding" Value="2"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="FontFamily" Value="Calibri" />
+    </Style>
+
 
     <!-- IMAGE -->
     <Style TargetType="{x:Type Image}" x:Key="imageStyle">

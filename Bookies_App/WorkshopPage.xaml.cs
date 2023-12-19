@@ -29,22 +29,29 @@ namespace Bookies_App
 
             // fill out information and get it to the backend
             //// TESTING DATA, COMMENT OUT WHEN WORKSHOP IS DONE
-            Book newBook = new Book();
-            newBook.genre = "testing genre";
-            newBook.content = "content for a book meant for post testing";
-            newBook.status = "complete";
-            newBook.description = "testing purposes";
-            newBook.name = "Test";
-            newBook.author = "657c86e89cd64c8f07daf73f";
-
-            Task<HttpResponseMessage> bookInsert = WebAPI.PostCall(API_URIs.books, newBook);
-
-            Debug.WriteLine(bookInsert.Result.Content.ReadAsStringAsync().Result);
+            
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Upload_Clicked(object sender, RoutedEventArgs e)
+        {
+            Book newBook = new Book();
+            newBook.genre = txtBox_text.Text;
+            newBook.content = txtBox_content.Text;
+            newBook.status = txtBox_content.Text;
+            newBook.description = txtBox_description.Text;
+            newBook.name = txtBox_title.Text;
+
+            //get this from logged user id
+            newBook.author = "657c86e89cd64c8f07daf73f";
+
+            Task<HttpResponseMessage> bookInsert = WebAPI.PostCall(API_URIs.books, newBook);
+
+            Debug.WriteLine(bookInsert.Result.Content.ReadAsStringAsync().Result);
         }
     }
 }

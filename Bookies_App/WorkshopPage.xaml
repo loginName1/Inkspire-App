@@ -29,7 +29,7 @@
                     <ColumnDefinition Width="8.3*"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Style="{StaticResource pageH2Style}" Grid.Column="0">Title:</TextBlock>
-                <TextBox Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
+                <TextBox Name="txtBox_title" Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
             </Grid>
         </Grid>
 
@@ -40,7 +40,7 @@
                     <ColumnDefinition Width="8.3*"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Style="{StaticResource pageH2Style}" Grid.Column="0">Text:</TextBlock>
-                <TextBox Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
+                <TextBox Name="txtBox_text"  Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
             </Grid>
         </Grid>
 
@@ -51,7 +51,7 @@
                     <ColumnDefinition Width="8.3*"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Style="{StaticResource pageH2Style}" Grid.Column="0">Status:</TextBlock>
-                <TextBox Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
+                <TextBox Name="txtBox_status" Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
             </Grid>
         </Grid>
 
@@ -62,7 +62,7 @@
                     <ColumnDefinition Width="8.3*"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Style="{StaticResource pageH2Style}" Grid.Column="0">Description:</TextBlock>
-                <TextBox Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
+                <TextBox Name="txtBox_description" Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
             </Grid>
         </Grid>
 
@@ -73,12 +73,12 @@
                     <ColumnDefinition Width="8.3*"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Style="{StaticResource pageH2Style}" Grid.Column="0">Content:</TextBlock>
-                <TextBox Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
+                <TextBox Name="txtBox_content" Grid.Column="1" Style="{StaticResource TextBoxStyle2}"/>
             </Grid>
         </Grid>
 
         <Grid Grid.Row="6" HorizontalAlignment="Right">
-            <Button Style="{StaticResource ButtonStyle}" >Upload</Button>
+            <Button Style="{StaticResource ButtonStyle}" Click="Button_Upload_Clicked" >Upload</Button>
         </Grid>
 
     </Grid>

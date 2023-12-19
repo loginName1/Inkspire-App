@@ -45,6 +45,27 @@ namespace Bookies_App
             Debug.WriteLine(jsonedComments);
             //// WHEN DISPLAYING COMMENTS IS DONE UNCOMMENT
             //CommentList.ItemsSource = listComments.comments;
+
+
+
+            // PATCH CALL FOR EDITING A BOOK
+            // need an edit page, edit page has textboxes filled with book info, when patching the book fill Book object with data from textboxes
+            //// TESTING DATA, COMMENT OUT WHEN EDIT IS DONE
+            Book editedBook = JsonSerializer.Deserialize<Book>(bookDetails.Result.Content.ReadAsStringAsync().Result);
+
+            editedBook.genre = "testing genre new";
+            editedBook.content = "content for a book meant for post testing";
+            editedBook.status = "complete";
+            editedBook.description = "testing purposes";
+            editedBook.name = "Test";
+            editedBook.author = "657c86e89cd64c8f07daf73f";
+
+
+            Task<HttpResponseMessage> responseBook = WebAPI.PatchCall(API_URIs.books + bookUrl, editedBook);
+
+
+            Debug.WriteLine(responseBook.Result.Content.ReadAsStringAsync().Result);
+
         }
     }
 }

@@ -60,7 +60,7 @@ namespace Bookies_App
             }
         }
 
-        public static Task<HttpResponseMessage> PutCall<T>(string url, T model) where T : class
+        public static Task<HttpResponseMessage> PatchCall<T>(string url, T model) where T : class
         {
             try
             {
@@ -72,7 +72,7 @@ namespace Bookies_App
                     client.Timeout = TimeSpan.FromSeconds(900);
                     client.DefaultRequestHeaders.Accept.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    var response = client.PutAsJsonAsync(apiUrl, model);
+                    var response = client.PatchAsJsonAsync(apiUrl, model);
                     response.Wait();
                     return response;
                 }

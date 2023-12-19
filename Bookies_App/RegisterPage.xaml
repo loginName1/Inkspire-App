@@ -10,15 +10,20 @@
 
     <Grid Style="{StaticResource pageBackgroundStyle}">
         <StackPanel Style="{StaticResource StackPanelStyle}">
-            <TextBlock Text="register page" Style="{StaticResource pageH3Style}" />
-            <TextBox Style="{StaticResource TextBoxStyle}">Name</TextBox>
-            <TextBox Style="{StaticResource TextBoxStyle}">Username</TextBox>
-            <TextBox Style="{StaticResource TextBoxStyle}">Email</TextBox>
-            <TextBox Style="{StaticResource TextBoxStyle}">Password</TextBox>
+            <TextBlock Text="Register page" Style="{StaticResource pageH3Style}" />
+            <Label Content="Name:"/>
+            <TextBox Style="{StaticResource TextBoxStyle}" x:Name="txtBox_name"/>
+            <Label Content="Username:"/>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="txtBox_username"/>
+            <Label Content="Email:"/>
+            <TextBox Style="{StaticResource TextBoxStyle}" Name="txtBox_email"/>
+            <Label Content="Password:"/>
+            <PasswordBox Style="{StaticResource PasswordBoxStyle}" Name="txtBox_password"/>
             <WrapPanel Style="{StaticResource WrapPanelStyle}">
-                <Button Style="{StaticResource LoginButtonStyle_1}">REGISTER</Button>
+                <Button Style="{StaticResource LoginButtonStyle_1}" Click="Button_Click">REGISTER</Button>
                 <Button Style="{StaticResource LoginButtonStyle_2}">LOGIN</Button>
             </WrapPanel>
+            <Label Name="label_error" Content=""/>
         </StackPanel>
     </Grid>
 </Page>

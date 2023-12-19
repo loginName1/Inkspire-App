@@ -10,16 +10,19 @@
 
     <Grid Style="{StaticResource pageBackgroundStyle}">
         <StackPanel Style="{StaticResource StackPanelStyle}">
-            <TextBlock Text="login page" Style="{StaticResource pageH3Style}" />
+            <TextBlock Text="Login page" Style="{StaticResource pageH3Style}" />
 
-            
 
-            <TextBox Style="{StaticResource TextBoxStyle}">Uporabniško ime</TextBox>
-            <TextBox Style="{StaticResource TextBoxStyle}">Geslo</TextBox>
+
+            <Label Content="Username:"/>
+            <TextBox Name="txtBox_username" Style="{StaticResource TextBoxStyle}"/>
+            <Label Content="Password:"/>
+            <PasswordBox Name="txtBox_password" Style="{StaticResource PasswordBoxStyle}"/>
             <WrapPanel Style="{StaticResource WrapPanelStyle}">
-                <Button Style="{StaticResource LoginButtonStyle_1}">LOGIN</Button>
+                <Button Style="{StaticResource LoginButtonStyle_1}" Click="Button_Click">LOGIN</Button>
                 <Button Style="{StaticResource LoginButtonStyle_2}">SIGN UP</Button>
             </WrapPanel>
+            <Label Name="label_error" Content=""/>
         </StackPanel>
     </Grid>
 </Page>
