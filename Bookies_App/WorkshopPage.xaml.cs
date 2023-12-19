@@ -29,7 +29,9 @@ namespace Bookies_App
 
             // fill out information and get it to the backend
             //// TESTING DATA, COMMENT OUT WHEN WORKSHOP IS DONE
-            
+
+
+            labelAuthor.Text = "Author: " + Properties.Settings.Default.user.ToString();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -47,7 +49,7 @@ namespace Bookies_App
             newBook.name = txtBox_title.Text;
 
             //get this from logged user id
-            newBook.author = "657c86e89cd64c8f07daf73f";
+            newBook.author = Properties.Settings.Default.loggedIn;
 
             Task<HttpResponseMessage> bookInsert = WebAPI.PostCall(API_URIs.books, newBook);
 

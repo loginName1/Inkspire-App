@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -30,11 +31,15 @@ namespace Bookies_App
             // get user id from some storage
 
             //// SET USER ID WHEN ACCOUNT PAGE IS COMPLETE
-            string userId = "657c86e89cd64c8f07daf73f";
+            string userId = Properties.Settings.Default.user;
             string userUrl = "/" + userId;
 
             Task<HttpResponseMessage> accountInfo = WebAPI.GetCall(API_URIs.users + userUrl);
             Debug.WriteLine(accountInfo.Result.Content.ReadAsStringAsync().Result);
+
+            labelEmail.Text = JsonObject.Parse(accountInfo.Result.Content.ReadAsStringAsync().Result)["user"]["email"].ToString();
+            labelName.Text = JsonObject.Parse(accountInfo.Result.Content.ReadAsStringAsync().Result)["user"]["name"].ToString();
+            labelUsername.Text = JsonObject.Parse(accountInfo.Result.Content.ReadAsStringAsync().Result)["user"]["username"].ToString();
         }
     }
 }

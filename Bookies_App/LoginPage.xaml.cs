@@ -75,8 +75,17 @@ namespace Bookies_App
                 // else if login was successful give user their ID
                 loggedIn.id = JsonObject.Parse(login.Result.Content.ReadAsStringAsync().Result)["user"]["id"].ToString();
 
+
+
+                Properties.Settings.Default.loggedIn = JsonObject.Parse(login.Result.Content.ReadAsStringAsync().Result)["user"]["id"].ToString();
+                Properties.Settings.Default.user = JsonObject.Parse(login.Result.Content.ReadAsStringAsync().Result)["user"]["username"].ToString();
+                Properties.Settings.Default.email = JsonObject.Parse(login.Result.Content.ReadAsStringAsync().Result)["user"]["email"].ToString();
+                Properties.Settings.Default.name = JsonObject.Parse(login.Result.Content.ReadAsStringAsync().Result)["user"]["name"].ToString();
+
                 label_error.Content = "Uporabnik uspešno prijavljen";
                 //Debug.WriteLine(loggedIn.id);
+
+                Properties.Settings.Default.Save(); 
             }
         }
     }

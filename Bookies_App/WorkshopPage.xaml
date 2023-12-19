@@ -20,7 +20,7 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0">
             <TextBlock Style="{StaticResource pageH2Style}">Upload your work</TextBlock>
-            <TextBlock Style="{StaticResource pageH4Style}">Author: USER</TextBlock>
+            <TextBlock Name="labelAuthor" Style="{StaticResource pageH4Style}">Author: USER</TextBlock>
         </StackPanel>
         <Grid Grid.Row="1">
             <Grid>

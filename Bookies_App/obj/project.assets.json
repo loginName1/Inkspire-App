@@ -8,16 +8,11 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\timve\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\Intel\\.nuget\\packages\\": {}
->>>>>>> e5675d1883c1e240d3ec0c05b652cce1c9841de8
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "D:\\_RIT_MAG\\1. Letnik\\RUPS\\Inkspire-App\\Bookies_App\\Bookies_App.csproj",
       "projectName": "Bookies_App",
       "projectPath": "D:\\_RIT_MAG\\1. Letnik\\RUPS\\Inkspire-App\\Bookies_App\\Bookies_App.csproj",
@@ -26,16 +21,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\timve\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\FERI_mag1_s1\\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\\n2\\Bookies_App\\Bookies_App.csproj",
-      "projectName": "Bookies_App",
-      "projectPath": "C:\\FERI_mag1_s1\\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\\n2\\Bookies_App\\Bookies_App.csproj",
-      "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-      "outputPath": "C:\\FERI_mag1_s1\\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\\n2\\Bookies_App\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> e5675d1883c1e240d3ec0c05b652cce1c9841de8
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -82,5 +67,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\_RIT_MAG\\1. Letnik\\RUPS\\Inkspire-App\\Bookies_App\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

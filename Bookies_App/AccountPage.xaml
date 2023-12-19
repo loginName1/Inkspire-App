@@ -22,13 +22,13 @@
         <Grid Grid.Column="1">
             <StackPanel>
                 <TextBlock Style="{StaticResource pageH1Style}">Username:</TextBlock>
-                <TextBlock Style="{StaticResource pageH2Style}">Username</TextBlock>
+                <TextBlock Name="labelUsername" Style="{StaticResource pageH2Style}">Username</TextBlock>
 
                 <TextBlock Style="{StaticResource pageH1Style}">Name:</TextBlock>
-                <TextBlock Style="{StaticResource pageH2Style}">name</TextBlock>
+                <TextBlock Name="labelName" Style="{StaticResource pageH2Style}">name</TextBlock>
 
                 <TextBlock Style="{StaticResource pageH1Style}">Email:</TextBlock>
-                <TextBlock Style="{StaticResource pageH2Style}">email@test.com</TextBlock>
+                <TextBlock Name="labelEmail" Style="{StaticResource pageH2Style}">email@test.com</TextBlock>
 
                 <TextBlock Style="{StaticResource pageH1Style}">List of Books:</TextBlock>
                 <ListBox></ListBox>

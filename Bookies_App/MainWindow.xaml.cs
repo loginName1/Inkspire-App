@@ -24,6 +24,7 @@ namespace Bookies_App
         WorkshopPage workshopPage = null;
         BookInfoPage bookInfoPage = null;
 
+
         public MainWindow()
         {
             InitializeComponent();
