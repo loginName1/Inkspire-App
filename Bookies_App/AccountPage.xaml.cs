@@ -31,7 +31,7 @@ namespace Bookies_App
             // get user id from some storage
 
             //// SET USER ID WHEN ACCOUNT PAGE IS COMPLETE
-            string userId = Properties.Settings.Default.user;
+            string userId = Properties.Settings.Default.loggedIn;
             string userUrl = "/" + userId;
 
             Task<HttpResponseMessage> accountInfo = WebAPI.GetCall(API_URIs.users + userUrl);

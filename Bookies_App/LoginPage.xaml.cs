@@ -32,6 +32,8 @@ namespace Bookies_App
             txtBox_password.Password = string.Empty;
             txtBox_username.Text = string.Empty;
 
+            
+
             /// get user login info
 
             //// TESTING INFORMATION
@@ -85,7 +87,8 @@ namespace Bookies_App
                 label_error.Content = "Uporabnik uspešno prijavljen";
                 //Debug.WriteLine(loggedIn.id);
 
-                Properties.Settings.Default.Save(); 
+                Properties.Settings.Default.Save();
+
             }
         }
     }

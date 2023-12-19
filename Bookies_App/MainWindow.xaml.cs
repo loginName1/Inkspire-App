@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.ComponentModel;
+using System.Configuration;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -23,17 +25,56 @@ namespace Bookies_App
         RegisterPage registerPage = null;
         WorkshopPage workshopPage = null;
         BookInfoPage bookInfoPage = null;
+        AccountPage accountPage = null;
 
 
-        public MainWindow()
+        private void SettingsChangingEventHandler(object sender, SettingChangingEventArgs e)
         {
-            InitializeComponent();
+            if (Properties.Settings.Default.loggedIn != "")
+            {
+                header_logged_in.Visibility = Visibility.Visible;
+                header_logged_out.Visibility = Visibility.Hidden;
+
+            }
+            else
+            {
+                header_logged_in.Visibility = Visibility.Hidden;
+                header_logged_out.Visibility = Visibility.Visible;
+            }
+
             if (homePage == null)
             {
                 homePage = new HomePage();
             }
 
             Main.Content = homePage;
+        }
+
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            Properties.Settings.Default.SettingChanging += SettingsChangingEventHandler;
+
+
+            if (homePage == null)
+            {
+                homePage = new HomePage();
+            }
+
+            Main.Content = homePage;
+
+            if (Properties.Settings.Default.loggedIn != "")
+            {
+                header_logged_in.Visibility = Visibility.Visible;
+                header_logged_out.Visibility = Visibility.Hidden;
+                
+            }
+            else
+            {
+                header_logged_in.Visibility = Visibility.Hidden;
+                header_logged_out.Visibility = Visibility.Visible;
+            }
         }
 
         private void HomeRedirectClick(object sender, RoutedEventArgs e)
@@ -101,9 +142,37 @@ namespace Bookies_App
             Main.Content = registerPage;
         }
 
-        private void About_Click(object sender, RoutedEventArgs e)
+        private void AccountRedirectClick(object sender, RoutedEventArgs e)
         {
+            if (accountPage == null)
+            {
+                accountPage = new AccountPage();
+            }
 
+            Main.Content = accountPage;
+        }
+
+        private void LogoutClick(object sender, RoutedEventArgs e)
+        {
+            if (homePage == null)
+            {
+                homePage = new HomePage();
+            }
+
+            Main.Content = homePage;
+
+            Properties.Settings.Default.Reset();
+
+            if (Properties.Settings.Default.loggedIn != "")
+            {
+                header_logged_in.Visibility = Visibility.Visible;
+                header_logged_out.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                header_logged_in.Visibility = Visibility.Hidden;
+                header_logged_out.Visibility = Visibility.Visible;
+            }
         }
     }
 }
