@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\yanbe\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\yanbe\\.nuget\\packages"
+      "C:\\Users\\Intel\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Intel\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,

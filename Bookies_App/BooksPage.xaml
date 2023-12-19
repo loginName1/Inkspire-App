@@ -12,25 +12,43 @@
         <StackPanel>
             <TextBlock Text="Books page" Style="{StaticResource pageH3Style}"/>
 
-            <WrapPanel HorizontalAlignment="Center" >
-                <ListView x:Name="BookList" Background="{x:Null}">
+            <StackPanel HorizontalAlignment="Center">
+                <ListView x:Name="BookList" Background="{x:Null}" MouseDoubleClick="BookList_MouseDoubleClick">
                     <ListView.ItemsPanel>
                         <ItemsPanelTemplate>
-                            <WrapPanel Width="800px"/>
+                            <StackPanel Width="750px" Height="360px" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
                         </ItemsPanelTemplate>
                     </ListView.ItemsPanel>
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <Border Style="{StaticResource BorderCardStyle}">
-                                <StackPanel>
-                                    <TextBlock Text="{Binding name}" Style="{StaticResource pageH5Style}"/>
-                                    <TextBlock Text="{Binding author}" Style="{StaticResource pageH6Style}"/>
-                                </StackPanel>
+
+                            <Border VerticalAlignment="Center"  Style="{StaticResource BorderCardStyle2}">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="6*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0" Text="{Binding name}" Style="{StaticResource pageH5Style}"/>
+                                        <TextBlock Grid.Row="1" Text="{Binding author}" Style="{StaticResource pageH6Style}"/>
+                                    </Grid>
+                                    <Grid Grid.Column="1">
+                                        <TextBlock TextTrimming="CharacterEllipsis" VerticalAlignment="Center" Text="{Binding description}"/>
+                                    </Grid>
+                                </Grid>
                             </Border>
+
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListView>
-            </WrapPanel>
+            </StackPanel>
+            
+            
         </StackPanel>
     </Grid>
 </Page>
