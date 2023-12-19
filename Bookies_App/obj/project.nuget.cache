@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "NZsabvkwbepHmgTr6sf3/yD1n5pyuNE24Q+U06bNmEAQwEB17HJfcfmZiLrOLa2CY9FgJWantD/2fhr05uEOlA==",
   "success": true,
   "projectFilePath": "D:\\_RIT_MAG\\1. Letnik\\RUPS\\Inkspire-App\\Bookies_App\\Bookies_App.csproj",
+=======
+  "dgSpecHash": "7x0i3avc+C7ncRjwZ7EP/PA6X8nWAF/ZPRm2L58oIVSnIVxNrWwnpozoNkN3qnvb1TUncutocwRO+3oExu3XSQ==",
+  "success": true,
+  "projectFilePath": "C:\\FERI_mag1_s1\\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\\n2\\Bookies_App\\Bookies_App.csproj",
+>>>>>>> e5675d1883c1e240d3ec0c05b652cce1c9841de8
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -4,12 +4,20 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 D:\_RIT_MAG\1. Letnik\RUPS\Inkspire-App\Bookies_App\obj\Debug\net8.0-windows\
+=======
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\obj\Debug\net8.0-windows\
+>>>>>>> e5675d1883c1e240d3ec0c05b652cce1c9841de8
 Bookies_App
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+<<<<<<< HEAD
 D:\_RIT_MAG\1. Letnik\RUPS\Inkspire-App\Bookies_App\App.xaml
+=======
+C:\FERI_mag1_s1\RAZVOJ IN UPRAVLJANJE PROGRAMSKIH SISTEMOV\n2\Bookies_App\App.xaml
+>>>>>>> e5675d1883c1e240d3ec0c05b652cce1c9841de8
 101889811847
 1-170518284
 181383218721

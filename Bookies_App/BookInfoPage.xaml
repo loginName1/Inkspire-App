@@ -21,7 +21,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="2*"/>
-                <RowDefinition Height="2*"/>
+                <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
@@ -33,17 +33,17 @@
 
                 <StackPanel Grid.Column="0">
                     <TextBlock Style="{StaticResource pageH1Style}"> Author </TextBlock>
-                    <TextBlock Style="{StaticResource pageH2Style}"> author </TextBlock>
+                    <TextBlock x:Name="infoAuthor" Style="{StaticResource pageH2Style}"> author </TextBlock>
                 </StackPanel>
 
                 <StackPanel Grid.Column="1">
                     <TextBlock Style="{StaticResource pageH1Style}"> Genre </TextBlock>
-                    <TextBlock Style="{StaticResource pageH2Style}"> genre </TextBlock>
+                    <TextBlock x:Name="infoGenre" Style="{StaticResource pageH2Style}"> genre </TextBlock>
                 </StackPanel>
 
                 <StackPanel Grid.Column="2">
                     <TextBlock Style="{StaticResource pageH1Style}"> Status </TextBlock>
-                    <TextBlock Style="{StaticResource pageH2Style}"> status</TextBlock>
+                    <TextBlock x:Name="infoStatus" Style="{StaticResource pageH2Style}"> status</TextBlock>
                 </StackPanel>
 
             </Grid>
@@ -51,15 +51,15 @@
             <Grid Grid.Row="1">
                 <StackPanel Grid.Column="0">
                     <TextBlock Style="{StaticResource pageH1Style}">Description</TextBlock>
-                    <TextBlock Style="{StaticResource pageH4Style}">The Description</TextBlock>
+                    <TextBlock x:Name="infoDesc" Style="{StaticResource pageH4Style}" Text="Dummy text"/>
                 </StackPanel>
             </Grid>
 
             <Grid Grid.Row="2">
                 <StackPanel Grid.Column="0">
                     <TextBlock Style="{StaticResource pageH1Style}">Content</TextBlock>
-                    <ScrollViewer Height="120px" ScrollViewer.VerticalScrollBarVisibility="Auto">
-                        <TextBlock TextWrapping="Wrap" Text="Lorus. Phasellus consectetur neque ctetur neque a sodala sodales ultrices. Vivamus vulputate ex nec libero condimentum finibus. Praesent sed egestas quam. Aenean idLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel lorem id purus fringilla semper eget a purus. Phasellus consectetur neque a sodales ultrices. Vivamus vulputate ex nec libero condimentum finibus. Praesent sed egestas quam. Aenean id eros neque. Mauris efficitur nisl etLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel lorem id purus fringilla semper eget a purus. Phasellus consectetur neque a sodales ultrices. Vivamus vulputate ex nec libero condimentum finibus. Praesent sed egestas quam. Aenean id eros neque. Mauris efficitur nisl et eros neque. Mauris efficitur nisl et"/>
+                    <ScrollViewer Height="200px" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <TextBlock FontSize="14px" Foreground="Bisque" x:Name="infocontent" TextWrapping="Wrap" Text="Lorus. Phasellus consectetur neque ctetur neque a sodala sodales ultrices. Vivamus vulputate ex nec libero condimentum finibus. Praesent sed egestas quam. Aenean idLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel lorem id purus fringilla semper eget a purus. Phasellus consectetur neque a sodales ultrices. Vivamus vulputate ex nec libero condimentum finibus. Praesent sed egestas quam. Aenean id eros neque. Mauris efficitur nisl etLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel lorem id purus fringilla semper eget a purus. Phasellus consectetur neque a sodales ultrices. Vivamus vulputate ex nec libero condimentum finibus. Praesent sed egestas quam. Aenean id eros neque. Mauris efficitur nisl et eros neque. Mauris efficitur nisl et"/>
                     </ScrollViewer>
                 </StackPanel>
             </Grid>

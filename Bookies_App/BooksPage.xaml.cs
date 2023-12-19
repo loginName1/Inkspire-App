@@ -28,6 +28,7 @@ namespace Bookies_App
     /// </summary>
     public partial class BooksPage : Page
     {
+        BookList listBooks = null;
         public BooksPage()
         {
             //
@@ -49,14 +50,32 @@ namespace Bookies_App
             //// (PAMETNO SHRANITI V SPREMENLJIVKO ČE SE NA STRANI VEČKRAT DELA S PODATKI)
             string jsonedBooks = bookResponse.Result.Content.ReadAsStringAsync().Result;
             //// ZA DESERIALIZACIJO SEZNAMA PODATKOV (TOREJ VEČ KNJIG TU) SE NAREDI CLASS KJER SE NAHAJA SEZNAM BASE OBJEKTOV (PRIPORČLJIVO JE VKLJUČITI TUDI COUNT SPREMENLJIVKO)
-            BookList listBooks = JsonSerializer.Deserialize<BookList>(jsonedBooks);
+            listBooks = JsonSerializer.Deserialize<BookList>(jsonedBooks);
             //// MORE DEBUGGING LINES
             //listBooks.books.ForEach(p => Debug.WriteLine(p.name));
             //// NE POZABITI REFERENCIRATI DEJANSKIH OBJEKTOV V SEZNAMU
-            BookList.ItemsSource = listBooks.books;
+            ///
+            if(listBooks!=null)
+                BookList.ItemsSource = listBooks.books;
         }
 
+        private void BookList_Selected(object sender, RoutedEventArgs e)
+        {
+           
+        }
 
+        private void BookList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            //MessageBox.Show(listBooks.books[BookList.SelectedIndex].name);
+            BookInfoPage BIP = new BookInfoPage();
+            this.NavigationService.Navigate(BIP);
+            BIP.infoAuthor.Text = listBooks.books[BookList.SelectedIndex].author;
+            BIP.infoGenre.Text = listBooks.books[BookList.SelectedIndex].genre;
+            BIP.infoStatus.Text = listBooks.books[BookList.SelectedIndex].status;
+            BIP.infoDesc.Text = listBooks.books[BookList.SelectedIndex].description;
+            BIP.infocontent.Text = listBooks.books[BookList.SelectedIndex].content;
+       
+        }
     }
 
 
